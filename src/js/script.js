@@ -1,22 +1,21 @@
 const choices = ["rock", "paper", "scissors"];
 
 function getPCChoice() {
-  let choice = Math.floor(Math.random() * 3);
-  return choices[choice];
+  return Math.floor(Math.random() * 3);
 }
 
 function play(userChoice) {
   const pcChoice = getPCChoice();
+  userChoice = choices.indexOf(userChoice);
   let winner = "draw";
 
   if(userChoice === pcChoice) {}
   else
-    winner = (userChoice === "rock" && pcChoice === "scissors"
-      || userChoice === "scissors" && pcChoice === "paper"
-      || userChoice === "paper" && pcChoice === "rock")
-      ? "you" : "pc";
+    winner = (userChoice === 0 && pcChoice === 2
+      || userChoice === 2 && pcChoice === 1
+      || userChoice === 1 && pcChoice === 0) ? "you" : "pc";
 
-  document.getElementById("result").innerText = (message(userChoice, pcChoice, winner));
+  document.getElementById("result").innerText = (message(choices[userChoice], choices[pcChoice], winner));
 }
 
 function message(userChoice, pcChoice, winner) {
