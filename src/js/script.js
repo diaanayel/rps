@@ -1,8 +1,8 @@
-const values = ["rock", "paper", "scissors"];
+const choices = ["rock", "paper", "scissors"];
 
 function getPCChoice() {
   let choice = Math.floor(Math.random() * 3);
-  return values[choice];
+  return choices[choice];
 }
 
 function play(userChoice) {
