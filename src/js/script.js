@@ -1,7 +1,5 @@
 /*
 I know polluting env with global vars is forbidden, may god forgive me :(
-The UI is not responsive cuz my laptop is broken and i made this with the phone
-
 TODO
 refactor!.. this is also forbidden :(
 */
