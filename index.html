@@ -12,12 +12,32 @@
   <header>
     <h1>Rock Paper Scissors</h1>
   </header>
-  <section class="controls">
-    <input type="submit" value="rock">
-    <input type="submit" value="paper">
-    <input type="submit" value="scissors">
+
+  <section class="board">
+    <label id="winner"></label>
+    <div class="scores">
+      <figure id="user-figure">
+        <img id="user-choice-img" width="100" src="/src/assets/svgs/qmark.svg" alt="user choice" class="choice user">
+        <figcaption>player</figcaption>
+      </figure>
+      <label class="score user" id="user-score">0</label>
+      :
+      <label class="score pc" id="pc-score">0</label>
+      <figure id="pc-figure">
+        <img id="pc-choice-img" width="100" src="/src/assets/svgs/qmark.svg" alt="computer choice" class="choice pc">
+        <figcaption>computer</figcaption>
+      </figure>
+    </div>
   </section>
-  <label id="result"></label>
+
+  <section class="controls">
+    <div class="choices">
+      <img width="100" src="/src/assets/svgs/rock.svg" alt="rock" class="choice user">
+      <img width="100" src="/src/assets/svgs/paper.svg" alt="paper" class="choice user">
+      <img width="100" src="/src/assets/svgs/scissors.svg" alt="scissors" class="choice user">
+    </div>
+    <button id="new-game">New Game</button>
+  </section>
 
   <script src="/src/js/script.js"></script>
 </body>

@@ -12,23 +12,94 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #91803a44;
 }
 
 header {
   padding: 8px 16px;
 }
 
+section.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
 section.controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 5% 10%;
+}
+
+section.board div.scores,
+div.choices {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
   padding: 5% 10%;
+  border-radius: 8px;
 }
 
-input[type="submit"] {
-  padding: 8px 16px;
-  text-align: center;
-  flex: 1;
+.choice {
+  width: 80px;
+  height: 80px;
+  transition: all ease-in-out 0.3s;
 }
+
+div.choices .choice {
+  border-radius: 8px;
+  border: 1px solid #3a6391;
+}
+
+div.choices .choice:hover {
+  transform: translateY(-16px);
+}
+
+section.board label.score {
+  font-size: 48px;
+}
+
+figure {
+  padding: 8px;
+  border-radius: 8px;
+  border-bottom: 8px solid #3a6391;
+  background-color: #3a639144;
+}
+
+.winner {
+  border-color: #3a9161;
+  background-color: #3a916144;
+}
+
+.loser {
+  border-color: #913a51;
+  background-color: #913a5144;
+}
+
+figcaption {
+  text-align: center;
+}
+
+button {
+  color: #3a6391;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #3a639122;
+  border: 1px solid #3a6391;
+}
+
+button:hover {
+  background-color: #3a639188;
+}
+
+label#winner {
+  text-align: center;
+  font-size: 24px;
+}
+
