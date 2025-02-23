@@ -14,10 +14,10 @@ const pcScoreLabel   = document.querySelector("#pc-score");
 const winnerLabel    = document.querySelector("#winner");
 
 const choices = {
-  rock: { value: 0, name: "rock", img: "/src/assets/svgs/rock.svg" },
-  paper: { value: 1, name: "paper", img: "/src/assets/svgs/paper.svg" },
-  scissors: { value: 2, name: "scissors", img: "/src/assets/svgs/scissors.svg" },
-  fresh: { value: 3, name: "fresh", img: "/src/assets/svgs/qmark.svg" }
+  rock: { value: 0, name: "rock", img: "src/assets/svgs/rock.svg" },
+  paper: { value: 1, name: "paper", img: "src/assets/svgs/paper.svg" },
+  scissors: { value: 2, name: "scissors", img: "src/assets/svgs/scissors.svg" },
+  fresh: { value: 3, name: "fresh", img: "src/assets/svgs/qmark.svg" }
 };
 
 const user = { name: "You", score: 0, latestChoice: null };
